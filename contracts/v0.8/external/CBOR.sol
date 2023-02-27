@@ -44,8 +44,6 @@ import "./Buffer.sol";
  */
 
 library CBOR {
-    using Buffer for Buffer.buffer;
-
     struct CBORBuffer {
         Buffer.buffer buf;
         uint256 depth;

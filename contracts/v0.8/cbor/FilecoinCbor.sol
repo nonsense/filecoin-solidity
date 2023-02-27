@@ -20,7 +20,6 @@
 pragma solidity ^0.8.17;
 
 import "../external/CBOR.sol";
-import "../external/Buffer.sol";
 import "../types/CommonTypes.sol";
 import "../utils/CborDecode.sol";
 
@@ -28,7 +27,6 @@ import "../utils/CborDecode.sol";
 /// @title This library is a set of functions meant to handle CBOR serialization and deserialization for general data types on the filecoin network.
 /// @author Zondax AG
 library FilecoinCBOR {
-    using Buffer for Buffer.buffer;
     using CBOR for CBOR.CBORBuffer;
     using CBORDecoder for bytes;
 
